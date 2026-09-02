@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Check, X } from 'lucide-react';
 
 export default function Pricing() {
   const [billingCycle, setBillingCycle] = useState('monthly');
 
   return (
-    <section id="pricing" className="relative py-20 lg:py-24 bg-slate-900 border-t border-slate-800 overflow-hidden">
+    <section id="pricing" className="relative py-20 lg:py-24 bg-slate-900 border-t border-slate-800 overflow-hidden scroll-mt-28">
       {/* Orange Glow Decor */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-500/10 blur-[150px] rounded-full pointer-events-none"></div>
 
@@ -34,9 +35,9 @@ export default function Pricing() {
               }`}
             ></div>
           </button>
-          <div className="flex items-center gap-2">
-            <span className={`text-sm font-semibold ${billingCycle === 'yearly' ? 'text-white' : 'text-slate-400'}`}>Annual Billing</span>
-            <span className="px-2.5 py-0.5 text-xs font-bold text-orange-400 bg-orange-500/10 border border-orange-400/20">Save 20%</span>
+          <div className="flex items-center gap-1.5">
+            <span className={`text-sm font-semibold ${billingCycle === 'yearly' ? 'text-white' : 'text-slate-400'}`}>Yearly Billing</span>
+            <span className="px-2 py-0.5 text-[10px] font-extrabold text-white bg-orange-500 uppercase tracking-wider rounded-full">Save 20%</span>
           </div>
         </div>
 
@@ -47,8 +48,8 @@ export default function Pricing() {
           <div className="flex flex-col justify-between p-8 bg-white/5 border border-white/10 backdrop-blur-sm transition duration-300 hover:border-white/20">
             <div className="space-y-6">
               <div>
-                <h3 class="text-xl font-bold text-white mb-1">Starter</h3>
-                <p className="text-xs text-slate-400">Ideal for individual course creators & tutors.</p>
+                <h3 className="text-xl font-bold text-white mb-1">Starter Academy</h3>
+                <p className="text-xs text-slate-400">Ideal for individual tutors & course creators starting out.</p>
               </div>
 
               <div className="flex items-baseline gap-1">
@@ -66,15 +67,15 @@ export default function Pricing() {
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-orange-400 flex-shrink-0" />
-                  <span>Up to <strong>250 Students</strong></span>
+                  <span>Up to <strong>250 Active Students</strong></span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-orange-400 flex-shrink-0" />
-                  <span>Local Payment Gateway Integration</span>
+                  <span>Integrated LKR Payment Gateway</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-orange-400 flex-shrink-0" />
-                  <span>Basic Quiz & Assignment Engine</span>
+                  <span>Standard Video Protection</span>
                 </li>
                 <li className="flex items-center gap-3 text-slate-500">
                   <X className="w-5 h-5 text-slate-600 flex-shrink-0" />
@@ -84,12 +85,12 @@ export default function Pricing() {
             </div>
 
             <div className="pt-8">
-              <a 
-                href="#contact" 
+              <Link 
+                to="/contact" 
                 className="block w-full text-center px-6 py-3.5 text-sm font-bold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition"
               >
                 Get Started
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -138,12 +139,12 @@ export default function Pricing() {
             </div>
 
             <div className="pt-8">
-              <a 
-                href="#contact" 
+              <Link 
+                to="/contact" 
                 className="block w-full text-center px-6 py-3.5 text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 transition shadow-lg shadow-orange-500/25"
               >
                 Start 14-Day Free Trial
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -184,12 +185,12 @@ export default function Pricing() {
             </div>
 
             <div className="pt-8">
-              <a 
-                href="#contact" 
+              <Link 
+                to="/contact" 
                 className="block w-full text-center px-6 py-3.5 text-sm font-bold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition"
               >
                 Contact Sales
-              </a>
+              </Link>
             </div>
           </div>
 

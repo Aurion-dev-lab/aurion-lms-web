@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative h-screen flex items-center overflow-hidden">
+    <section id="hero" className="relative h-screen flex items-center overflow-hidden scroll-mt-28">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -33,19 +34,19 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center gap-4 pt-2">
-            <a 
-              href="#pricing"
+            <Link 
+              to="/pricing"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 transition shadow-lg shadow-orange-500/25"
             >
               <ArrowRight className="w-4 h-4" />
               Get Started Free
-            </a>
-            <a 
-              href="#features"
+            </Link>
+            <Link 
+              to="/features"
               className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-bold text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-sm transition"
             >
               See How It Works
-            </a>
+            </Link>
           </div>
 
           {/* Trust Stats */}

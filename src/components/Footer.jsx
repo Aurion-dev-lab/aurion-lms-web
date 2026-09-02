@@ -40,10 +40,10 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold text-xs uppercase tracking-wider mb-4">Product</h4>
             <ul className="space-y-2.5 text-sm">
-              <li><a href="/#features" className="hover:text-orange-400 transition">Core Features</a></li>
-              <li><a href="/#pricing" className="hover:text-orange-400 transition">Pricing Plans</a></li>
-              <li><a href="/#testimonials" className="hover:text-orange-400 transition">Customer Reviews</a></li>
-              <li><a href="/#faq" className="hover:text-orange-400 transition">FAQ</a></li>
+              <li><Link to="/features" className="hover:text-orange-400 transition">Core Features</Link></li>
+              <li><Link to="/pricing" className="hover:text-orange-400 transition">Pricing Plans</Link></li>
+              <li><Link to="/features" className="hover:text-orange-400 transition">Customer Reviews</Link></li>
+              <li><Link to="/faq" className="hover:text-orange-400 transition">FAQ</Link></li>
             </ul>
           </div>
 
@@ -85,9 +85,9 @@ export default function Footer() {
         <div className="pt-8 border-t border-slate-800/80 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
           <p>&copy; {new Date().getFullYear()} Aurion LMS Platform. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="/#features" className="hover:text-slate-300 transition">Privacy Policy</a>
-            <a href="/#features" className="hover:text-slate-300 transition">Terms of Service</a>
-            <a href="/#contact" className="hover:text-slate-300 transition">Security & Compliance</a>
+            <Link to="/features" className="hover:text-slate-300 transition">Privacy Policy</Link>
+            <Link to="/features" className="hover:text-slate-300 transition">Terms of Service</Link>
+            <Link to="/contact" className="hover:text-slate-300 transition">Security & Compliance</Link>
           </div>
         </div>
       </div>

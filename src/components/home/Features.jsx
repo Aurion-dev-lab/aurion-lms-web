@@ -152,7 +152,7 @@ export default function Features() {
     <section 
       id="features" 
       ref={sectionRef}
-      className="relative py-16 lg:py-24 bg-white text-slate-900 overflow-hidden border-t border-slate-100"
+      className="relative py-16 lg:py-24 bg-white text-slate-900 overflow-hidden border-t border-slate-100 scroll-mt-28"
     >
       {/* Background Subtle Radial Accent */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-orange-500/5 blur-[120px] rounded-full pointer-events-none"></div>

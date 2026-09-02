@@ -83,26 +83,68 @@ export default function Navbar() {
 
             {/* Desktop Navigation Links */}
             <nav className="hidden md:flex items-center gap-1 sm:gap-1.5">
-              <Link to="/" className="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-orange-600 hover:bg-slate-900/5 transition-all duration-200">Home</Link>
-              <a href="#features" className="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-orange-600 hover:bg-slate-900/5 transition-all duration-200">Features</a>
-              <a href="#pricing" className="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-orange-600 hover:bg-slate-900/5 transition-all duration-200">Pricing</a>
-              <Link to="/instructors" className={`px-3.5 py-2 text-sm font-semibold transition-all duration-200 ${location.pathname === '/instructors' ? 'text-orange-600 bg-orange-500/10' : 'text-slate-700 hover:text-orange-600 hover:bg-slate-900/5'}`}>For Instructors</Link>
-              <Link to="/students" className={`px-3.5 py-2 text-sm font-semibold transition-all duration-200 ${location.pathname === '/students' ? 'text-orange-600 bg-orange-500/10' : 'text-slate-700 hover:text-orange-600 hover:bg-slate-900/5'}`}>For Students</Link>
-              <a href="#faq" className="px-3.5 py-2 text-sm font-semibold text-slate-700 hover:text-orange-600 hover:bg-slate-900/5 transition-all duration-200">FAQ</a>
+              <Link 
+                to="/" 
+                className={`px-3.5 py-2 text-sm font-semibold transition-all duration-200 ${
+                  location.pathname === '/' ? 'text-orange-600 bg-orange-500/10' : 'text-slate-700 hover:text-orange-600 hover:bg-slate-900/5'
+                }`}
+              >
+                Home
+              </Link>
+              <Link 
+                to="/features" 
+                className={`px-3.5 py-2 text-sm font-semibold transition-all duration-200 ${
+                  location.pathname === '/features' ? 'text-orange-600 bg-orange-500/10' : 'text-slate-700 hover:text-orange-600 hover:bg-slate-900/5'
+                }`}
+              >
+                Features
+              </Link>
+              <Link 
+                to="/pricing" 
+                className={`px-3.5 py-2 text-sm font-semibold transition-all duration-200 ${
+                  location.pathname === '/pricing' ? 'text-orange-600 bg-orange-500/10' : 'text-slate-700 hover:text-orange-600 hover:bg-slate-900/5'
+                }`}
+              >
+                Pricing
+              </Link>
+              <Link 
+                to="/instructors" 
+                className={`px-3.5 py-2 text-sm font-semibold transition-all duration-200 ${
+                  location.pathname === '/instructors' ? 'text-orange-600 bg-orange-500/10' : 'text-slate-700 hover:text-orange-600 hover:bg-slate-900/5'
+                }`}
+              >
+                For Instructors
+              </Link>
+              <Link 
+                to="/students" 
+                className={`px-3.5 py-2 text-sm font-semibold transition-all duration-200 ${
+                  location.pathname === '/students' ? 'text-orange-600 bg-orange-500/10' : 'text-slate-700 hover:text-orange-600 hover:bg-slate-900/5'
+                }`}
+              >
+                For Students
+              </Link>
+              <Link 
+                to="/faq" 
+                className={`px-3.5 py-2 text-sm font-semibold transition-all duration-200 ${
+                  location.pathname === '/faq' ? 'text-orange-600 bg-orange-500/10' : 'text-slate-700 hover:text-orange-600 hover:bg-slate-900/5'
+                }`}
+              >
+                FAQ
+              </Link>
             </nav>
 
             {/* Desktop Actions */}
             <div className="hidden md:flex items-center gap-3">
-              <a href="#contact" className="px-5 py-2.5 text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 shadow-md shadow-orange-500/20 transition-all duration-200 active:scale-95">
+              <Link to="/contact" className="px-5 py-2.5 text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 shadow-md shadow-orange-500/20 transition-all duration-200 active:scale-95">
                 Get Started Free
-              </a>
+              </Link>
             </div>
 
             {/* Mobile Header Actions */}
             <div className="md:hidden flex items-center gap-2">
-              <a href="#contact" className="px-3.5 py-2 text-xs font-bold text-white bg-orange-500 active:scale-95 transition-transform">
+              <Link to="/contact" className="px-3.5 py-2 text-xs font-bold text-white bg-orange-500 active:scale-95 transition-transform">
                 Get Started
-              </a>
+              </Link>
               <button 
                 onClick={toggleMobileMenu} 
                 className="p-2 text-slate-800 bg-slate-900/5 hover:bg-slate-900/10 active:bg-orange-500/10 transition focus:outline-none"
@@ -118,16 +160,16 @@ export default function Navbar() {
         {mobileMenuOpen && (
           <div className="md:hidden border-t border-slate-900/5 bg-white/95 backdrop-blur-2xl px-4 pt-3 pb-6 space-y-1.5 shadow-2xl max-h-[calc(100vh-5rem)] overflow-y-auto">
             <Link to="/" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-base font-semibold text-slate-800 hover:text-orange-600 hover:bg-slate-900/5 transition">Home</Link>
-            <a href="#features" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-base font-semibold text-slate-800 hover:text-orange-600 hover:bg-slate-900/5 transition">Features</a>
-            <a href="#pricing" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-base font-semibold text-slate-800 hover:text-orange-600 hover:bg-slate-900/5 transition">Pricing</a>
+            <Link to="/features" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-base font-semibold text-slate-800 hover:text-orange-600 hover:bg-slate-900/5 transition">Features</Link>
+            <Link to="/pricing" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-base font-semibold text-slate-800 hover:text-orange-600 hover:bg-slate-900/5 transition">Pricing</Link>
             <Link to="/instructors" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-base font-semibold text-slate-800 hover:text-orange-600 hover:bg-slate-900/5 transition">For Instructors</Link>
             <Link to="/students" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-base font-semibold text-slate-800 hover:text-orange-600 hover:bg-slate-900/5 transition">For Students</Link>
-            <a href="#faq" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-base font-semibold text-slate-800 hover:text-orange-600 hover:bg-slate-900/5 transition">FAQ</a>
+            <Link to="/faq" onClick={() => setMobileMenuOpen(false)} className="block px-4 py-3 text-base font-semibold text-slate-800 hover:text-orange-600 hover:bg-slate-900/5 transition">FAQ</Link>
             
             <div className="flex flex-col gap-2.5 pt-4 border-t border-slate-900/5">
-              <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="w-full text-center py-3 text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 transition shadow-sm active:scale-[0.99]">
+              <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="w-full text-center py-3 text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 transition shadow-sm active:scale-[0.99]">
                 Get Started Free
-              </a>
+              </Link>
             </div>
           </div>
         )}
