@@ -37,7 +37,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
       <div className="min-h-screen flex flex-col justify-between bg-slate-50 text-slate-900 font-sans selection:bg-orange-100 selection:text-orange-900 overflow-x-hidden">
         <Navbar />
