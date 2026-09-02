@@ -29,9 +29,9 @@ export default function Infrastructure() {
   ];
 
   return (
-    <section id="servers" className="relative py-20 lg:py-32 bg-[#0F172A] border-t border-white/5 overflow-hidden">
+    <section id="servers" className="relative py-20 lg:py-32 bg-slate-900 border-t border-slate-800 overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 w-[800px] h-[800px] bg-indigo-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 w-[800px] h-[800px] bg-amber-500/10 blur-[120px] rounded-full pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 w-[600px] h-[600px] bg-orange-500/10 blur-[120px] rounded-full pointer-events-none"></div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -117,7 +117,7 @@ export default function Infrastructure() {
             </div>
 
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-orange-500/20 rounded-full blur-[40px] pointer-events-none"></div>
-            <div className="absolute -top-6 -left-6 w-32 h-32 bg-indigo-500/20 rounded-full blur-[40px] pointer-events-none"></div>
+            <div className="absolute -top-6 -left-6 w-32 h-32 bg-orange-500/20 rounded-full blur-[40px] pointer-events-none"></div>
           </div>
 
         </div>

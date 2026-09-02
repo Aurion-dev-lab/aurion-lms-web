@@ -18,7 +18,7 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="relative w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
+              <div className="relative w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center shadow-md shadow-orange-500/20">
                 <div className="absolute w-5 h-5 border-2 border-white rounded-md rotate-12"></div>
                 <div className="w-2.5 h-2.5 bg-white rounded-sm"></div>
               </div>
@@ -40,11 +40,10 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold text-xs uppercase tracking-wider mb-4">Product</h4>
             <ul className="space-y-2.5 text-sm">
-              <li><a href="/#features" className="hover:text-indigo-400 transition">Core Features</a></li>
-              <li><a href="/#solutions" className="hover:text-indigo-400 transition">Role Solutions</a></li>
-              <li><a href="/#pricing" className="hover:text-indigo-400 transition">Pricing Plans</a></li>
-              <li><a href="/#testimonials" className="hover:text-indigo-400 transition">Customer Reviews</a></li>
-              <li><a href="/#faq" className="hover:text-indigo-400 transition">FAQ</a></li>
+              <li><a href="/#features" className="hover:text-orange-400 transition">Core Features</a></li>
+              <li><a href="/#pricing" className="hover:text-orange-400 transition">Pricing Plans</a></li>
+              <li><a href="/#testimonials" className="hover:text-orange-400 transition">Customer Reviews</a></li>
+              <li><a href="/#faq" className="hover:text-orange-400 transition">FAQ</a></li>
             </ul>
           </div>
 
@@ -52,8 +51,8 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold text-xs uppercase tracking-wider mb-4">Solutions</h4>
             <ul className="space-y-2.5 text-sm">
-              <li><Link to="/instructors" className="hover:text-indigo-400 transition">For Instructors</Link></li>
-              <li><Link to="/students" className="hover:text-indigo-400 transition">For Students</Link></li>
+              <li><Link to="/instructors" className="hover:text-orange-400 transition">For Instructors</Link></li>
+              <li><Link to="/students" className="hover:text-orange-400 transition">For Students</Link></li>
             </ul>
           </div>
 
@@ -71,9 +70,9 @@ export default function Footer() {
                   type="email" 
                   placeholder="work@organization.com" 
                   required 
-                  className="w-full px-3.5 py-2 text-xs text-white bg-slate-800 border border-slate-700 rounded-xl focus:outline-none focus:border-indigo-500 transition placeholder:text-slate-500"
+                  className="w-full px-3.5 py-2 text-xs text-white bg-slate-800 border border-slate-700 rounded-xl focus:outline-none focus:border-orange-500 transition placeholder:text-slate-500"
                 />
-                <button type="submit" className="w-full py-2 text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl transition">
+                <button type="submit" className="w-full py-2 text-xs font-bold text-white bg-orange-500 hover:bg-orange-600 rounded-xl transition shadow-md shadow-orange-500/20">
                   Subscribe
                 </button>
               </form>

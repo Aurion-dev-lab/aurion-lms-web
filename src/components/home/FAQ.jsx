@@ -37,7 +37,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="relative w-full py-24 lg:py-32 bg-[#242d42] border-t border-white/10 overflow-hidden">
+    <section id="faq" className="relative w-full py-24 lg:py-32 bg-slate-900 border-t border-slate-800 overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-500/10 blur-[160px] rounded-full pointer-events-none"></div>
 
       <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

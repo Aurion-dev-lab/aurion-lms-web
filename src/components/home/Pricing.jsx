@@ -5,7 +5,7 @@ export default function Pricing() {
   const [billingCycle, setBillingCycle] = useState('monthly');
 
   return (
-    <section id="pricing" className="relative py-20 lg:py-24 bg-[#242d42] border-t border-white/10 overflow-hidden">
+    <section id="pricing" className="relative py-20 lg:py-24 bg-slate-900 border-t border-slate-800 overflow-hidden">
       {/* Orange Glow Decor */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-500/10 blur-[150px] rounded-full pointer-events-none"></div>
 
